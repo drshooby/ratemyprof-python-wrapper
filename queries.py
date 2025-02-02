@@ -26,6 +26,11 @@ $query: SchoolSearchQuery
 """
 )
 
+def build_school_search_query(school_text):
+    return {"query": {
+        "text": school_text,
+    }}
+
 '''
 This will help you perform searches for Prof IDs based on what's passed into the variables
 as they will be necessary for the ratings search.
@@ -60,6 +65,15 @@ query NewSearchTeachersQuery(
   }
 }
 """)
+
+def build_teacher_search_query(prof_name_text, school_id_text, count=10):
+    return {
+        "query": {
+            "text": prof_name_text,
+            "schoolID": school_id_text
+        },
+        "count": count
+    }
 
 '''
 This gets the rating information.
@@ -186,3 +200,8 @@ fragment TeacherTitles_teacher on Teacher {
   department
 }
 """)
+
+def build_rating_query(prof_id_text):
+    return {
+        "id": prof_id_text,
+    }
