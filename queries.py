@@ -27,9 +27,11 @@ $query: SchoolSearchQuery
 )
 
 def build_school_search_query(school_text):
-    return {"query": {
-        "text": school_text,
-    }}
+    return {
+        "query": {
+            "text": school_text,
+        }
+    }
 
 '''
 This will help you perform searches for Prof IDs based on what's passed into the variables
