@@ -1,7 +1,6 @@
 import json
 
 from queries import *
-from queries import build_teacher_search_query
 from rmp_wrapper import RMPWrapper
 
 rmp = RMPWrapper()
