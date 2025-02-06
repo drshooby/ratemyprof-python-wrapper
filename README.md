@@ -19,4 +19,7 @@ A simple Python wrapper for fetching Rate My Professor review data using GraphQL
 pip install -r requirements.txt
 ```
 
-3. Take a look at `main.py` for documented usage. Additional note, queries use the 'id' field and link builders use 'legacyId'. Enjoy 🙂
+3. Take a look at `main.py` for documented usage. Additional note, queries use the 'id' field and link builders use 'legacyId'.
+
+  
+4. Contributions and feedback are always welcome! If you have suggestions for improvements, feel free to open a pull request. Thanks, and enjoy! 🙂
