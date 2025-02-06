@@ -38,9 +38,9 @@ def build_rating_link(legacy_id):
 
 
 # Query builders
-def build_school_search_query(school_text):
+def build_school_search_query(school_name):
     """Builds a search query for schools."""
-    return {"query": {"text": school_text}}
+    return {"query": {"text": school_name}}
 
 
 def build_teacher_search_query(prof_name, school_id, count=10):
